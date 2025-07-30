@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Faixa etaria</title>
+</head>
+<body>
+    <script>
+        let idade = Number(prompt("Insira sua idade:"));
+        if (idade < 18) {
+            resultado = `Criança.`;
+        } 
+        if (idade >= 18 && idade < 60){
+            resultado = `Adulto.`;
+        }
+        if (idade >=60)
+            resultado = `Idoso.`;
+
+        document.write(resultado);
+        console.log(resultado);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar Ano Bissexto</title>
+</head>
+<body>
+    <script>
+        let ano = Number(prompt("Digite um ano:"));
+        let resultado = "";
+
+        if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+            resultado = `${ano} é um ano bissexto.`;
+        } else {
+            resultado = `${ano} não é um ano bissexto.`;
+        }
+
+        document.write(resultado);
+        console.log(resultado);
+    </script>
+</body>
+</html>

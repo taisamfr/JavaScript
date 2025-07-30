@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior Número</title>
+</head>
+<body>
+    <script>
+        let n1 = Number(prompt("Insira o primeiro número:"));
+        let n2 = Number(prompt("Insira o segundo número:"));
+        let n3 = Number(prompt("Insira o terceiro número:"));
+        let resultado = "";
+
+        if (n1 >= n2 && n1 >= n3) {
+            resultado = `${n1} é o maior número.`;
+        } else if (n2 >= n1 && n2 >= n3) {
+            resultado = `${n2} é o maior número.`;
+        } else {
+            resultado = `${n3} é o maior número.`;
+        }
+
+        document.write(resultado);
+        console.log(resultado);
+    </script>
+</body>
+</html>
