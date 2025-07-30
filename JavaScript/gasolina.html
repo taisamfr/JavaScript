@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litros de Gasolina</title>
+</head>
+<body>
+    <script>
+        // Recebe os dados do usuário
+        let valor = Number(prompt("Deseja colocar quanto R$ de gasolina:"));
+        let preco = Number(prompt("Informe o preço da gasolina por litro R$:"));
+
+        // Calcula a quantidade de litros
+        let litros = valor / preco;
+
+        // Exibe o resultado com 2 casas decimais
+        alert("Seu tanque recebeu um total de " + litros.toFixed(2) + " litros de gasolina.");
+    </script>
+</body>
+</html>
+
+

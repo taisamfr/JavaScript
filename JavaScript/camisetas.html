@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábrica de Camisetas</title>
+</head>
+<body>
+    <script>
+        // Preços das camisetas
+        let precoPequeno = 10;
+        let precoMedio = 12;
+        let precoGrande = 15;
+
+        // Receba os dados do usuário
+        let quantidadeP = Number(prompt("Informe a quantidade de camisetas pequenas desejadas:"));
+        let quantidadeM = Number(prompt("Informe a quantidade de camisetas médias desejadas:"));
+        let quantidadeG = Number(prompt("Informe a quantidade de camisetas grandes desejadas:"));
+
+        // Cálculo do total por tamanho
+        let totalP = precoPequeno * quantidadeP;
+        let totalM = precoMedio * quantidadeM;
+        let totalG = precoGrande * quantidadeG;
+
+        // Cálculo do total geral
+        let totalGeral = totalP + totalM + totalG;
+
+        // Exiba o resultado
+        alert(
+            "Resumo da Venda:\n" +
+            "- Total camisetas PEQUENAS: R$ " + totalP.toFixed(2) +
+            "- Total camisetas MÉDIAS: R$ " + totalM.toFixed(2) +
+            "- Total camisetas GRANDES: R$ " + totalG.toFixed(2)  +
+            ">> VALOR TOTAL ARRECADADO: R$ " + totalGeral.toFixed(2)
+        );
+    </script>
+</body>
+</html>
+
+
+        
